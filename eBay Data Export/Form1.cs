@@ -26,23 +26,23 @@ namespace eBay_Data_Export
             InitializeComponent();
         }
 
-        private async void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
             
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var client = new RestClient("https://api.sandbox.ebay.com/ws/api.dll");
+            var client = new RestClient("https://api.ebay.com/ws/api.dll");
             var request = new RestRequest(Method.POST);
             request.AddHeader("x-ebay-api-siteid", "0");
             request.AddHeader("x-ebay-api-call-name", "GetSessionID");
             request.AddHeader("x-ebay-api-compatibility-level", "967");
             request.AddHeader("content-type", "text/xml");
-            request.AddHeader("x-ebay-api-cert-name", "SBX-45f0c76378c2-8dd7-40e6-b49d-0c12");
+            request.AddHeader("x-ebay-api-cert-name", "PRD-45ed603527c9-2461-4859-9906-7f37");
             request.AddHeader("x-ebay-api-dev-name", "8105fd0e-a76c-4e10-80e8-43e86ab59f7c");
-            request.AddHeader("x-ebay-api-app-name", "GregoryM-mailer-SBX-b45f0c763-f90c92ad");
-            request.AddParameter("text/xml", "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<GetSessionIDRequest xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n\t<RuName>Gregory_Morris_-GregoryM-mailer-fkfdcrz</RuName>\n\t<ErrorLanguage>en_US</ErrorLanguage>\n\t<MessageID></MessageID>\n\t<Version>967</Version>\n\t<WarningLevel>High</WarningLevel>\n</GetSessionIDRequest>", ParameterType.RequestBody);
+            request.AddHeader("x-ebay-api-app-name", "GregoryM-mailer-PRD-a45ed6035-97c14545");
+            request.AddParameter("text/xml", "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<GetSessionIDRequest xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n\t<RuName>Gregory_Morris_-GregoryM-mailer-viaojj</RuName>\n\t<ErrorLanguage>en_US</ErrorLanguage>\n\t<MessageID></MessageID>\n\t<Version>967</Version>\n\t<WarningLevel>High</WarningLevel>\n</GetSessionIDRequest>", ParameterType.RequestBody);
             IRestResponse response = client.Execute(request);
 
             //MessageBox.Show(((int)response.StatusCode).ToString());
@@ -54,13 +54,13 @@ namespace eBay_Data_Export
 
             sessionID = nodes[0].InnerText;
 
-            Process.Start("https://signin.sandbox.ebay.com/ws/eBayISAPI.dll?SignIn&runame=Gregory_Morris_-GregoryM-mailer-fkfdcrz&SessID=" + sessionID);
+            Process.Start("https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&runame=Gregory_Morris_-GregoryM-mailer-viaojj&SessID=" + sessionID);
             //MessageBox.Show(FetchToken(sessionID));
         }
 
         string FetchToken(string sessionID)
         {
-            var client = new RestClient("https://api.sandbox.ebay.com/ws/api.dll");
+            var client = new RestClient("https://api.ebay.com/ws/api.dll");
             var request = new RestRequest(Method.POST);
             request.AddHeader("postman-token", "aa94b5fa-1e64-1402-a25b-6505dde5c093");
             request.AddHeader("cache-control", "no-cache");
@@ -68,9 +68,9 @@ namespace eBay_Data_Export
             request.AddHeader("x-ebay-api-call-name", "FetchToken");
             request.AddHeader("x-ebay-api-compatibility-level", "967");
             request.AddHeader("content-type", "text/xml");
-            request.AddHeader("x-ebay-api-cert-name", "SBX-45f0c76378c2-8dd7-40e6-b49d-0c12");
+            request.AddHeader("x-ebay-api-cert-name", "PRD-45ed603527c9-2461-4859-9906-7f37");
             request.AddHeader("x-ebay-api-dev-name", "8105fd0e-a76c-4e10-80e8-43e86ab59f7c");
-            request.AddHeader("x-ebay-api-app-name", "GregoryM-mailer-SBX-b45f0c763-f90c92ad");
+            request.AddHeader("x-ebay-api-app-name", "GregoryM-mailer-PRD-a45ed6035-97c14545");
             request.AddParameter("text/xml", "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<FetchTokenRequest xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n\t<SessionID>" + sessionID + "</SessionID>\n\t<ErrorLanguage>en_US</ErrorLanguage>\n\t<Version>967</Version>\n\t<WarningLevel>High</WarningLevel>\n</FetchTokenRequest>", ParameterType.RequestBody);
             IRestResponse response = client.Execute(request);
 
