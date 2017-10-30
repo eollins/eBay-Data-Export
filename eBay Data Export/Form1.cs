@@ -19,6 +19,8 @@ namespace eBay_Data_Export
 {
     public partial class Form1 : Form
     {
+        string sessionID = "";
+        string authToken = "";
         public Form1()
         {
             InitializeComponent();
@@ -50,7 +52,39 @@ namespace eBay_Data_Export
             doc.LoadXml(response.Content);
             XmlNodeList nodes = ((XmlElement)doc.GetElementsByTagName("GetSessionIDResponse")[0]).GetElementsByTagName("SessionID");
 
-            string sessionID = nodes[0].InnerText;
+            sessionID = nodes[0].InnerText;
+
+            Process.Start("https://signin.sandbox.ebay.com/ws/eBayISAPI.dll?SignIn&runame=Gregory_Morris_-GregoryM-mailer-fkfdcrz&SessID=" + sessionID);
+            //MessageBox.Show(FetchToken(sessionID));
+        }
+
+        string FetchToken(string sessionID)
+        {
+            var client = new RestClient("https://api.sandbox.ebay.com/ws/api.dll");
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("postman-token", "aa94b5fa-1e64-1402-a25b-6505dde5c093");
+            request.AddHeader("cache-control", "no-cache");
+            request.AddHeader("x-ebay-api-siteid", "0");
+            request.AddHeader("x-ebay-api-call-name", "FetchToken");
+            request.AddHeader("x-ebay-api-compatibility-level", "967");
+            request.AddHeader("content-type", "text/xml");
+            request.AddHeader("x-ebay-api-cert-name", "SBX-45f0c76378c2-8dd7-40e6-b49d-0c12");
+            request.AddHeader("x-ebay-api-dev-name", "8105fd0e-a76c-4e10-80e8-43e86ab59f7c");
+            request.AddHeader("x-ebay-api-app-name", "GregoryM-mailer-SBX-b45f0c763-f90c92ad");
+            request.AddParameter("text/xml", "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<FetchTokenRequest xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n\t<SessionID>" + sessionID + "</SessionID>\n\t<ErrorLanguage>en_US</ErrorLanguage>\n\t<Version>967</Version>\n\t<WarningLevel>High</WarningLevel>\n</FetchTokenRequest>", ParameterType.RequestBody);
+            IRestResponse response = client.Execute(request);
+
+            XmlDocument doc = new XmlDocument();
+            doc.LoadXml(response.Content);
+            XmlNodeList nodes = ((XmlElement)doc.GetElementsByTagName("FetchTokenResponse")[0]).GetElementsByTagName("eBayAuthToken");
+            authToken = nodes[0].InnerText;
+
+            return nodes[0].InnerText;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(FetchToken(sessionID));
         }
     }
 }
