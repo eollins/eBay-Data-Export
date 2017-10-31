@@ -1,0 +1,2152 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GetSellerTransactionsResponse xmlns="urn:ebay:apis:eBLBaseComponents">
+  <Timestamp>2017-10-30T21:03:25.063Z</Timestamp>
+  <Ack>Success</Ack>
+  <Version>1033</Version>
+  <Build>E1033_CORE_APISELLING_18541794_R1</Build>
+  <PaginationResult>
+    <TotalNumberOfPages>679</TotalNumberOfPages>
+    <TotalNumberOfEntries>10184</TotalNumberOfEntries>
+  </PaginationResult>
+  <HasMoreTransactions>true</HasMoreTransactions>
+  <TransactionsPerPage>15</TransactionsPerPage>
+  <PageNumber>1</PageNumber>
+  <ReturnedTransactionCountActual>15</ReturnedTransactionCountActual>
+  <Seller>
+    <AboutMePage>false</AboutMePage>
+    <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJloGlDpODowydj6x9nY+seQ==</EIASToken>
+    <Email>gregmorris310@gmail.com</Email>
+    <FeedbackScore>136577</FeedbackScore>
+    <PositiveFeedbackPercent>100.0</PositiveFeedbackPercent>
+    <FeedbackPrivate>false</FeedbackPrivate>
+    <FeedbackRatingStar>RedShooting</FeedbackRatingStar>
+    <IDVerified>false</IDVerified>
+    <eBayGoodStanding>true</eBayGoodStanding>
+    <NewUser>false</NewUser>
+    <RegistrationDate>2002-09-04T04:29:32.000Z</RegistrationDate>
+    <Site>US</Site>
+    <Status>Confirmed</Status>
+    <UserID>gregmorriscards</UserID>
+    <UserIDChanged>false</UserIDChanged>
+    <UserIDLastChanged>2009-04-19T04:47:59.000Z</UserIDLastChanged>
+    <VATStatus>NoVATTax</VATStatus>
+    <SellerInfo>
+      <AllowPaymentEdit>false</AllowPaymentEdit>
+      <CheckoutEnabled>true</CheckoutEnabled>
+      <CIPBankAccountStored>false</CIPBankAccountStored>
+      <GoodStanding>true</GoodStanding>
+      <LiveAuctionAuthorized>false</LiveAuctionAuthorized>
+      <MerchandizingPref>OptIn</MerchandizingPref>
+      <QualifiesForB2BVAT>false</QualifiesForB2BVAT>
+      <StoreOwner>true</StoreOwner>
+      <StoreURL>http://www.stores.ebay.com/gregmorriscards</StoreURL>
+      <SafePaymentExempt>true</SafePaymentExempt>
+      <TopRatedSeller>true</TopRatedSeller>
+    </SellerInfo>
+  </Seller>
+  <TransactionArray>
+    <Transaction>
+      <AmountPaid currencyID="USD">49.0</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJkYGpCZGEpwqdj6x9nY+seQ==</EIASToken>
+        <Email>shawcj@aol.com</Email>
+        <FeedbackScore>3865</FeedbackScore>
+        <PositiveFeedbackPercent>100.0</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2000-02-27T23:01:38.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>shawcj</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2000-02-27T23:01:38.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Carl J. Shaw</Name>
+            <Street1>200 Gardens Dr</Street1>
+            <CityName>Springfield</CityName>
+            <StateOrProvince>MA</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(413) 782-5300</Phone>
+            <PostalCode>01119-2557</PostalCode>
+            <AddressID>2336082049021</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>shawcj_lxdp2258oc@members.ebay.com</StaticAlias>
+        <UserFirstName>Carl</UserFirstName>
+        <UserLastName>Shaw</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>true</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          <SalesTaxAmount currencyID="USD">0.0</SalesTaxAmount>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2549028</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+        <ShippingServiceUsed>ShippingMethodStandard</ShippingServiceUsed>
+        <ShipmentTrackingDetails>
+          <ShippingCarrierUsed>USPS</ShippingCarrierUsed>
+          <ShipmentTrackingNumber>9400111699000277200226</ShipmentTrackingNumber>
+        </ShipmentTrackingDetails>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">49.0</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">46.0</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-27T01:47:00.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>382253640862</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-17T01:46:57.000Z</StartTime>
+          <EndTime>2017-10-27T01:46:57.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>213</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>18</BidCount>
+          <CurrentPrice currencyID="USD">46.0</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1966 Topps Set Break #535 Willie Davis SP NR-MINT M27966</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>CheckoutComplete</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:11:27.000Z</LastTimeModified>
+        <PaymentMethodUsed>PayPal</PaymentMethodUsed>
+        <CompleteStatus>Complete</CompleteStatus>
+        <BuyerSelectedShipping>true</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+        <PaymentInstrument>PayPal</PaymentInstrument>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">46.0</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ExternalTransaction>
+        <ExternalTransactionID>75768174N1345454M</ExternalTransactionID>
+        <ExternalTransactionTime>2017-10-27T01:55:51.000Z</ExternalTransactionTime>
+        <FeeOrCreditAmount currencyID="USD">1.23</FeeOrCreditAmount>
+        <PaymentOrRefundAmount currencyID="USD">49.0</PaymentOrRefundAmount>
+        <ExternalTransactionStatus>Succeeded</ExternalTransactionStatus>
+      </ExternalTransaction>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+        <ShippingPackageInfo>
+          <EstimatedDeliveryTimeMin>2017-11-06T09:00:00.000Z</EstimatedDeliveryTimeMin>
+          <EstimatedDeliveryTimeMax>2017-11-06T09:00:00.000Z</EstimatedDeliveryTimeMax>
+        </ShippingPackageInfo>
+      </ShippingServiceSelected>
+      <PaidTime>2017-10-27T01:55:52.000Z</PaidTime>
+      <ShippedTime>2017-10-27T16:22:14.000Z</ShippedTime>
+      <ContainingOrder>
+        <OrderID>382253640862-0</OrderID>
+        <OrderStatus>Completed</OrderStatus>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ExtendedOrderID>382253640862-0!120000079515561</ExtendedOrderID>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">3.86</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <BuyerGuaranteePrice currencyID="USD">20000.0</BuyerGuaranteePrice>
+      <ActualShippingCost currencyID="USD">3.0</ActualShippingCost>
+      <ActualHandlingCost currencyID="USD">0.0</ActualHandlingCost>
+      <OrderLineItemID>382253640862-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <IntangibleItem>false</IntangibleItem>
+      <MonetaryDetails>
+        <Payments>
+          <Payment>
+            <PaymentStatus>Succeeded</PaymentStatus>
+            <Payer type="eBayUser">shawcj</Payer>
+            <Payee type="eBayUser">gregmorriscards</Payee>
+            <PaymentTime>2017-10-27T01:55:51.000Z</PaymentTime>
+            <PaymentAmount currencyID="USD">49.0</PaymentAmount>
+            <ReferenceID type="ExternalTransactionID">75768174N1345454M</ReferenceID>
+            <FeeOrCreditAmount currencyID="USD">1.23</FeeOrCreditAmount>
+          </Payment>
+        </Payments>
+      </MonetaryDetails>
+      <ExtendedOrderID>382253640862-0!120000079515561</ExtendedOrderID>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">22.47</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJlIehCZSCqQ2dj6x9nY+seQ==</EIASToken>
+        <Email>dwolff97@msn.com</Email>
+        <FeedbackScore>1652</FeedbackScore>
+        <PositiveFeedbackPercent>100.0</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2002-01-05T14:00:47.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>woofer72</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2002-01-05T14:00:47.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Matthew Wolff</Name>
+            <Street1>2954 Avalon Ave</Street1>
+            <CityName>Joliet</CityName>
+            <StateOrProvince>IL</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(815) 741-4471</Phone>
+            <PostalCode>60435-5138</PostalCode>
+            <AddressID>353399692011</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>woofer_jxwp5199tjt@members.ebay.com</StaticAlias>
+        <UserFirstName>Matthew</UserFirstName>
+        <UserLastName>Wolff</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2546107</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">22.47</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">10.51</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-25T03:37:54.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>382252162155</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-15T03:37:51.000Z</StartTime>
+          <EndTime>2017-10-25T03:37:51.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>213</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>15</BidCount>
+          <CurrentPrice currencyID="USD">10.51</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1976 Topps Set Break #650 Thurman Munson NM-MT OR BETTER m24756</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:13:49.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">10.51</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025337010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553117</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.83</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>382252162155-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:13:49.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">22.47</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJlIehCZSCqQ2dj6x9nY+seQ==</EIASToken>
+        <Email>dwolff97@msn.com</Email>
+        <FeedbackScore>1652</FeedbackScore>
+        <PositiveFeedbackPercent>100.0</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2002-01-05T14:00:47.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>woofer72</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2002-01-05T14:00:47.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Matthew Wolff</Name>
+            <Street1>2954 Avalon Ave</Street1>
+            <CityName>Joliet</CityName>
+            <StateOrProvince>IL</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(815) 741-4471</Phone>
+            <PostalCode>60435-5138</PostalCode>
+            <AddressID>353399692011</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>woofer_jxwp5199tjt@members.ebay.com</StaticAlias>
+        <UserFirstName>Matthew</UserFirstName>
+        <UserLastName>Wolff</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2547947</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">22.47</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">5.36</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-26T03:36:48.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>382252928302</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-16T03:36:45.000Z</StartTime>
+          <EndTime>2017-10-26T03:36:45.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>213</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>6</BidCount>
+          <CurrentPrice currencyID="USD">5.36</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1973 Topps Set Break #310 Dick Allen NM-MT OR BETTER m23482</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:13:49.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">5.36</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025337010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553117</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.42</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>382252928302-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:13:49.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">22.47</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJlIehCZSCqQ2dj6x9nY+seQ==</EIASToken>
+        <Email>dwolff97@msn.com</Email>
+        <FeedbackScore>1652</FeedbackScore>
+        <PositiveFeedbackPercent>100.0</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2002-01-05T14:00:47.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>woofer72</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2002-01-05T14:00:47.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Matthew Wolff</Name>
+            <Street1>2954 Avalon Ave</Street1>
+            <CityName>Joliet</CityName>
+            <StateOrProvince>IL</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(815) 741-4471</Phone>
+            <PostalCode>60435-5138</PostalCode>
+            <AddressID>353399692011</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>woofer_jxwp5199tjt@members.ebay.com</StaticAlias>
+        <UserFirstName>Matthew</UserFirstName>
+        <UserLastName>Wolff</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2551592</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">22.47</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">3.6</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-28T04:40:20.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>382254468133</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-18T04:40:16.000Z</StartTime>
+          <EndTime>2017-10-28T04:40:16.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>213</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>4</BidCount>
+          <CurrentPrice currencyID="USD">3.6</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1979 Topps Set Break #680 Carlton Fisk NM-MT OR BETTER m24880</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:13:49.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">3.6</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025337010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553117</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.28</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>382254468133-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:13:49.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">17.03</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJmIapD5WHqQidj6x9nY+seQ==</EIASToken>
+        <Email>mmoeller73@yahoo.com</Email>
+        <FeedbackScore>4923</FeedbackScore>
+        <PositiveFeedbackPercent>99.5</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2003-03-20T22:12:01.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>mmpuller1973</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2003-03-20T22:15:25.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Michael Moeller</Name>
+            <Street1>645 Apple Cross Ct</Street1>
+            <CityName>Robinson</CityName>
+            <StateOrProvince>TX</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(254) 721-8465</Phone>
+            <PostalCode>76706-5342</PostalCode>
+            <AddressID>1513669237022</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>mmpull_kus5248td@members.ebay.com</StaticAlias>
+        <UserFirstName>Michael</UserFirstName>
+        <UserLastName>Moeller</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2550956</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">17.03</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">1.05</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-28T02:36:18.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>311982689562</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-18T02:36:15.000Z</StartTime>
+          <EndTime>2017-10-28T02:36:15.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>213</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>4</BidCount>
+          <CurrentPrice currencyID="USD">1.05</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1976 Topps Set Break # 17 Billy Martin NM-MT OR BETTER M25041</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:14:04.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">1.05</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025347010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553118</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.08</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>311982689562-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:14:04.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">17.03</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJmIapD5WHqQidj6x9nY+seQ==</EIASToken>
+        <Email>mmoeller73@yahoo.com</Email>
+        <FeedbackScore>4923</FeedbackScore>
+        <PositiveFeedbackPercent>99.5</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2003-03-20T22:12:01.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>mmpuller1973</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2003-03-20T22:15:25.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Michael Moeller</Name>
+            <Street1>645 Apple Cross Ct</Street1>
+            <CityName>Robinson</CityName>
+            <StateOrProvince>TX</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(254) 721-8465</Phone>
+            <PostalCode>76706-5342</PostalCode>
+            <AddressID>1513669237022</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>mmpull_kus5248td@members.ebay.com</StaticAlias>
+        <UserFirstName>Michael</UserFirstName>
+        <UserLastName>Moeller</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2550047</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">17.03</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">3.31</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-28T00:01:13.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>382254386918</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-18T00:01:09.000Z</StartTime>
+          <EndTime>2017-10-28T00:01:09.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>215</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>5</BidCount>
+          <CurrentPrice currencyID="USD">3.31</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1971 Topps Set Break # 10 Lance Alworth EX-EXMINT L12315</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:14:04.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">3.31</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025347010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553118</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.26</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>382254386918-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:14:04.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">17.03</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJmIapD5WHqQidj6x9nY+seQ==</EIASToken>
+        <Email>mmoeller73@yahoo.com</Email>
+        <FeedbackScore>4923</FeedbackScore>
+        <PositiveFeedbackPercent>99.5</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2003-03-20T22:12:01.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>mmpuller1973</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2003-03-20T22:15:25.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Michael Moeller</Name>
+            <Street1>645 Apple Cross Ct</Street1>
+            <CityName>Robinson</CityName>
+            <StateOrProvince>TX</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(254) 721-8465</Phone>
+            <PostalCode>76706-5342</PostalCode>
+            <AddressID>1513669237022</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>mmpull_kus5248td@members.ebay.com</StaticAlias>
+        <UserFirstName>Michael</UserFirstName>
+        <UserLastName>Moeller</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2550074</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">17.03</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">2.02</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-28T00:05:25.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>382254388381</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-18T00:05:22.000Z</StartTime>
+          <EndTime>2017-10-28T00:05:22.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>215</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>4</BidCount>
+          <CurrentPrice currencyID="USD">2.02</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1971 Topps Set Break # 5 Tom Dempsey NR-MINT M31385</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:14:04.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">2.02</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025347010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553118</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.16</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>382254388381-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:14:04.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">17.03</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJmIapD5WHqQidj6x9nY+seQ==</EIASToken>
+        <Email>mmoeller73@yahoo.com</Email>
+        <FeedbackScore>4923</FeedbackScore>
+        <PositiveFeedbackPercent>99.5</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2003-03-20T22:12:01.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>mmpuller1973</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2003-03-20T22:15:25.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Michael Moeller</Name>
+            <Street1>645 Apple Cross Ct</Street1>
+            <CityName>Robinson</CityName>
+            <StateOrProvince>TX</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(254) 721-8465</Phone>
+            <PostalCode>76706-5342</PostalCode>
+            <AddressID>1513669237022</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>mmpull_kus5248td@members.ebay.com</StaticAlias>
+        <UserFirstName>Michael</UserFirstName>
+        <UserLastName>Moeller</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2550066</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">17.03</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">2.25</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-28T00:04:19.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>382254387986</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-18T00:04:15.000Z</StartTime>
+          <EndTime>2017-10-28T00:04:15.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>215</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>5</BidCount>
+          <CurrentPrice currencyID="USD">2.25</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1971 Topps Set Break # 4 Joe O&apos;Donnell RC NR-MINT M31319</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:14:04.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">2.25</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025347010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553118</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.18</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>382254387986-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:14:04.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">17.03</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJmIapD5WHqQidj6x9nY+seQ==</EIASToken>
+        <Email>mmoeller73@yahoo.com</Email>
+        <FeedbackScore>4923</FeedbackScore>
+        <PositiveFeedbackPercent>99.5</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2003-03-20T22:12:01.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>mmpuller1973</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2003-03-20T22:15:25.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Michael Moeller</Name>
+            <Street1>645 Apple Cross Ct</Street1>
+            <CityName>Robinson</CityName>
+            <StateOrProvince>TX</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(254) 721-8465</Phone>
+            <PostalCode>76706-5342</PostalCode>
+            <AddressID>1513669237022</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>mmpull_kus5248td@members.ebay.com</StaticAlias>
+        <UserFirstName>Michael</UserFirstName>
+        <UserLastName>Moeller</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2553013</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">17.03</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">3.8</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-29T04:18:42.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>382255145842</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-19T04:18:39.000Z</StartTime>
+          <EndTime>2017-10-29T04:18:39.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>213</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>4</BidCount>
+          <CurrentPrice currencyID="USD">3.8</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1970 Topps Set Break #670 Ron Santo VG-VGEX m14879</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:14:05.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">3.8</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025347010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553118</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.3</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>382255145842-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:14:05.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">17.03</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJmIapD5WHqQidj6x9nY+seQ==</EIASToken>
+        <Email>mmoeller73@yahoo.com</Email>
+        <FeedbackScore>4923</FeedbackScore>
+        <PositiveFeedbackPercent>99.5</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2003-03-20T22:12:01.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>mmpuller1973</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2003-03-20T22:15:25.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Michael Moeller</Name>
+            <Street1>645 Apple Cross Ct</Street1>
+            <CityName>Robinson</CityName>
+            <StateOrProvince>TX</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(254) 721-8465</Phone>
+            <PostalCode>76706-5342</PostalCode>
+            <AddressID>1513669237022</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>mmpull_kus5248td@members.ebay.com</StaticAlias>
+        <UserFirstName>Michael</UserFirstName>
+        <UserLastName>Moeller</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2550119</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">17.03</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">1.6</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-28T00:13:15.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>382254391342</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-18T00:13:12.000Z</StartTime>
+          <EndTime>2017-10-28T00:13:12.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>215</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>4</BidCount>
+          <CurrentPrice currencyID="USD">1.6</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1971 Topps Set Break #107 Ron Berger RC NR-MINT M31381</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:14:05.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">1.6</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025347010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553118</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.13</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>382254391342-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:14:05.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">166.94</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6AElYWoC5eGqQ6dj6x9nY+seQ==</EIASToken>
+        <Email>sfg.ws.champs@gmail.com</Email>
+        <FeedbackScore>1883</FeedbackScore>
+        <PositiveFeedbackPercent>100.0</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2011-04-24T03:28:08.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>2010champssfgiants</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2011-04-24T03:28:07.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Michael Speer</Name>
+            <Street1>165 SW Gabbert Road</Street1>
+            <CityName>Gresham</CityName>
+            <StateOrProvince>OR</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(503) 667-6898</Phone>
+            <PostalCode>97080</PostalCode>
+            <AddressID>700986384013</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>2010ch_iz2856ue@members.ebay.com</StaticAlias>
+        <UserFirstName>Michael</UserFirstName>
+        <UserLastName>Speer</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2546716</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">166.94</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">6.65</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-26T00:09:39.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>132365022383</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-16T00:09:36.000Z</StartTime>
+          <EndTime>2017-10-26T00:09:36.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>213</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>9</BidCount>
+          <CurrentPrice currencyID="USD">6.65</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1958 Topps Set Break #393 Tony Kubek EX-EXMINT m27488</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:14:24.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">6.65</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025352010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553119</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.52</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>132365022383-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:14:24.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">166.94</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6AElYWoC5eGqQ6dj6x9nY+seQ==</EIASToken>
+        <Email>sfg.ws.champs@gmail.com</Email>
+        <FeedbackScore>1883</FeedbackScore>
+        <PositiveFeedbackPercent>100.0</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2011-04-24T03:28:08.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>2010champssfgiants</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2011-04-24T03:28:07.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Michael Speer</Name>
+            <Street1>165 SW Gabbert Road</Street1>
+            <CityName>Gresham</CityName>
+            <StateOrProvince>OR</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(503) 667-6898</Phone>
+            <PostalCode>97080</PostalCode>
+            <AddressID>700986384013</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>2010ch_iz2856ue@members.ebay.com</StaticAlias>
+        <UserFirstName>Michael</UserFirstName>
+        <UserLastName>Speer</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2547469</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">166.94</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">7.1</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-26T02:16:10.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>132365139275</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-16T02:16:07.000Z</StartTime>
+          <EndTime>2017-10-26T02:16:07.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>213</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>7</BidCount>
+          <CurrentPrice currencyID="USD">7.1</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1965 Topps Set Break #379 Giants Team NR-MINT L21517</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:14:24.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">7.1</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025352010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553119</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.56</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>132365139275-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:14:24.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">166.94</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6AElYWoC5eGqQ6dj6x9nY+seQ==</EIASToken>
+        <Email>sfg.ws.champs@gmail.com</Email>
+        <FeedbackScore>1883</FeedbackScore>
+        <PositiveFeedbackPercent>100.0</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2011-04-24T03:28:08.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>2010champssfgiants</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2011-04-24T03:28:07.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Michael Speer</Name>
+            <Street1>165 SW Gabbert Road</Street1>
+            <CityName>Gresham</CityName>
+            <StateOrProvince>OR</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(503) 667-6898</Phone>
+            <PostalCode>97080</PostalCode>
+            <AddressID>700986384013</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>2010ch_iz2856ue@members.ebay.com</StaticAlias>
+        <UserFirstName>Michael</UserFirstName>
+        <UserLastName>Speer</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2552589</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">166.94</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">1.27</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-29T02:49:46.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>132368272903</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-19T02:49:43.000Z</StartTime>
+          <EndTime>2017-10-29T02:49:43.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>213</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>2</BidCount>
+          <CurrentPrice currencyID="USD">1.27</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1965 Topps Set Break # 68 Del Crandall EX-EXMINT M17189</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:14:25.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">1.27</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025352010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553119</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.1</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>132368272903-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:14:25.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">166.94</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6AElYWoC5eGqQ6dj6x9nY+seQ==</EIASToken>
+        <Email>sfg.ws.champs@gmail.com</Email>
+        <FeedbackScore>1883</FeedbackScore>
+        <PositiveFeedbackPercent>100.0</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2011-04-24T03:28:08.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>2010champssfgiants</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2011-04-24T03:28:07.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Michael Speer</Name>
+            <Street1>165 SW Gabbert Road</Street1>
+            <CityName>Gresham</CityName>
+            <StateOrProvince>OR</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(503) 667-6898</Phone>
+            <PostalCode>97080</PostalCode>
+            <AddressID>700986384013</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>2010ch_iz2856ue@members.ebay.com</StaticAlias>
+        <UserFirstName>Michael</UserFirstName>
+        <UserLastName>Speer</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2550077</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">166.94</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">2.3</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-28T00:06:15.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>132367182327</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-18T00:06:12.000Z</StartTime>
+          <EndTime>2017-10-28T00:06:12.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>215</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>6</BidCount>
+          <CurrentPrice currencyID="USD">2.3</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1971 Topps Set Break # 54 Bobby Douglass RC NR-MINT M31335</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:14:25.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">2.3</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025352010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553119</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.18</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>132367182327-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:14:25.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+    <Transaction>
+      <AmountPaid currencyID="USD">166.94</AmountPaid>
+      <AdjustmentAmount currencyID="USD">0.0</AdjustmentAmount>
+      <ConvertedAdjustmentAmount currencyID="USD">0.0</ConvertedAdjustmentAmount>
+      <Buyer>
+        <AboutMePage>false</AboutMePage>
+        <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6AElYWoC5eGqQ6dj6x9nY+seQ==</EIASToken>
+        <Email>sfg.ws.champs@gmail.com</Email>
+        <FeedbackScore>1883</FeedbackScore>
+        <PositiveFeedbackPercent>100.0</PositiveFeedbackPercent>
+        <FeedbackPrivate>false</FeedbackPrivate>
+        <FeedbackRatingStar>Red</FeedbackRatingStar>
+        <IDVerified>false</IDVerified>
+        <eBayGoodStanding>true</eBayGoodStanding>
+        <NewUser>false</NewUser>
+        <RegistrationDate>2011-04-24T03:28:08.000Z</RegistrationDate>
+        <Site>US</Site>
+        <Status>Confirmed</Status>
+        <UserID>2010champssfgiants</UserID>
+        <UserIDChanged>false</UserIDChanged>
+        <UserIDLastChanged>2011-04-24T03:28:07.000Z</UserIDLastChanged>
+        <VATStatus>NoVATTax</VATStatus>
+        <BuyerInfo>
+          <ShippingAddress>
+            <Name>Michael Speer</Name>
+            <Street1>165 SW Gabbert Road</Street1>
+            <CityName>Gresham</CityName>
+            <StateOrProvince>OR</StateOrProvince>
+            <Country>US</Country>
+            <CountryName>United States</CountryName>
+            <Phone>(503) 667-6898</Phone>
+            <PostalCode>97080</PostalCode>
+            <AddressID>700986384013</AddressID>
+            <AddressOwner>eBay</AddressOwner>
+            <AddressUsage>DefaultShipping</AddressUsage>
+          </ShippingAddress>
+        </BuyerInfo>
+        <UserAnonymized>false</UserAnonymized>
+        <StaticAlias>2010ch_iz2856ue@members.ebay.com</StaticAlias>
+        <UserFirstName>Michael</UserFirstName>
+        <UserLastName>Speer</UserLastName>
+      </Buyer>
+      <ShippingDetails>
+        <ChangePaymentInstructions>true</ChangePaymentInstructions>
+        <PaymentEdited>false</PaymentEdited>
+        <PaymentInstructions>We can&amp;#39;t combine orders once an invoice has been paid</PaymentInstructions>
+        <SalesTax>
+          <SalesTaxPercent>0.0</SalesTaxPercent>
+          <ShippingIncludedInTax>false</ShippingIncludedInTax>
+        </SalesTax>
+        <ShippingType>Flat</ShippingType>
+        <SellingManagerSalesRecordNumber>2549068</SellingManagerSalesRecordNumber>
+        <ThirdPartyCheckout>false</ThirdPartyCheckout>
+        <TaxTable>
+          <TaxJurisdiction>
+            <JurisdictionID>CA</JurisdictionID>
+            <SalesTaxPercent>8.75</SalesTaxPercent>
+            <ShippingIncludedInTax>false</ShippingIncludedInTax>
+          </TaxJurisdiction>
+        </TaxTable>
+        <GetItFast>false</GetItFast>
+      </ShippingDetails>
+      <ConvertedAmountPaid currencyID="USD">166.94</ConvertedAmountPaid>
+      <ConvertedTransactionPrice currencyID="USD">10.5</ConvertedTransactionPrice>
+      <CreatedDate>2017-10-27T01:53:53.000Z</CreatedDate>
+      <DepositType>None</DepositType>
+      <Item>
+        <AutoPay>false</AutoPay>
+        <BuyerProtection>ItemIneligible</BuyerProtection>
+        <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+        <Currency>USD</Currency>
+        <ItemID>132366169710</ItemID>
+        <ListingDetails>
+          <StartTime>2017-10-17T01:53:50.000Z</StartTime>
+          <EndTime>2017-10-27T01:53:50.000Z</EndTime>
+        </ListingDetails>
+        <ListingType>Chinese</ListingType>
+        <PaymentMethods>PayPal</PaymentMethods>
+        <PrimaryCategory>
+          <CategoryID>213</CategoryID>
+        </PrimaryCategory>
+        <PrivateListing>false</PrivateListing>
+        <Quantity>1</Quantity>
+        <SecondaryCategory>
+          <CategoryID>0</CategoryID>
+        </SecondaryCategory>
+        <SellingStatus>
+          <BidCount>13</BidCount>
+          <CurrentPrice currencyID="USD">10.5</CurrentPrice>
+          <QuantitySold>1</QuantitySold>
+          <ListingStatus>Completed</ListingStatus>
+        </SellingStatus>
+        <Site>US</Site>
+        <StartPrice currencyID="USD">0.79</StartPrice>
+        <Title>1966 Topps Set Break #593 Doug Camilli SP VG-VGEX m05757</Title>
+        <GetItFast>false</GetItFast>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+      </Item>
+      <QuantityPurchased>1</QuantityPurchased>
+      <Status>
+        <eBayPaymentStatus>NoPaymentFailure</eBayPaymentStatus>
+        <CheckoutStatus>SellerResponded</CheckoutStatus>
+        <LastTimeModified>2017-10-29T21:14:25.000Z</LastTimeModified>
+        <PaymentMethodUsed>None</PaymentMethodUsed>
+        <CompleteStatus>Incomplete</CompleteStatus>
+        <BuyerSelectedShipping>false</BuyerSelectedShipping>
+        <PaymentHoldStatus>None</PaymentHoldStatus>
+        <IntegratedMerchantCreditCardEnabled>false</IntegratedMerchantCreditCardEnabled>
+        <InquiryStatus>NotApplicable</InquiryStatus>
+        <ReturnStatus>NotApplicable</ReturnStatus>
+      </Status>
+      <TransactionID>0</TransactionID>
+      <TransactionPrice currencyID="USD">10.5</TransactionPrice>
+      <BestOfferSale>false</BestOfferSale>
+      <ShippingServiceSelected>
+        <ShippingService>ShippingMethodStandard</ShippingService>
+        <ShippingServiceCost currencyID="USD">3.0</ShippingServiceCost>
+      </ShippingServiceSelected>
+      <ContainingOrder>
+        <OrderID>235025352010</OrderID>
+        <OrderStatus>Active</OrderStatus>
+        <ShippingDetails>
+          <SellingManagerSalesRecordNumber>2553119</SellingManagerSalesRecordNumber>
+        </ShippingDetails>
+        <CreatingUserRole>Seller</CreatingUserRole>
+        <CancelStatus>NotApplicable</CancelStatus>
+        <ContainseBayPlusTransaction>false</ContainseBayPlusTransaction>
+      </ContainingOrder>
+      <FinalValueFee currencyID="USD">0.83</FinalValueFee>
+      <TransactionSiteID>US</TransactionSiteID>
+      <Platform>eBay</Platform>
+      <PayPalEmailAddress>gregmorris818@gmail.com</PayPalEmailAddress>
+      <OrderLineItemID>132366169710-0</OrderLineItemID>
+      <IsMultiLegShipping>false</IsMultiLegShipping>
+      <InvoiceSentTime>2017-10-29T21:14:25.000Z</InvoiceSentTime>
+      <IntangibleItem>false</IntangibleItem>
+      <eBayPlusTransaction>false</eBayPlusTransaction>
+    </Transaction>
+  </TransactionArray>
+  <PayPalPreferred>true</PayPalPreferred>
+</GetSellerTransactionsResponse>
