@@ -31,13 +31,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.button3 = new System.Windows.Forms.Button();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(96, 7);
+            this.button2.Location = new System.Drawing.Point(209, 7);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(90, 37);
@@ -66,24 +66,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(191, 19);
+            this.label1.Location = new System.Drawing.Point(113, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Not Signed In";
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(6, 59);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(180, 214);
-            this.checkedListBox1.TabIndex = 3;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(193, 59);
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(8, 56);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(74, 17);
             this.radioButton1.TabIndex = 4;
@@ -95,7 +89,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(193, 82);
+            this.radioButton2.Location = new System.Drawing.Point(95, 56);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(104, 17);
             this.radioButton2.TabIndex = 5;
@@ -106,10 +100,11 @@
             // 
             // button3
             // 
+            this.button3.Enabled = false;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(194, 159);
+            this.button3.Location = new System.Drawing.Point(8, 111);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(103, 114);
+            this.button3.Size = new System.Drawing.Size(290, 48);
             this.button3.TabIndex = 6;
             this.button3.Text = "Export";
             this.button3.UseVisualStyleBackColor = true;
@@ -117,7 +112,7 @@
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(193, 133);
+            this.numericUpDown2.Location = new System.Drawing.Point(103, 85);
             this.numericUpDown2.Minimum = new decimal(new int[] {
             1,
             0,
@@ -135,7 +130,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(258, 137);
+            this.label3.Location = new System.Drawing.Point(168, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 10;
@@ -146,17 +141,29 @@
             this.saveFileDialog1.Filter = "CSV files|*.csv|All files|*.*";
             this.saveFileDialog1.Title = "Save Data";
             // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(205, 56);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(104, 17);
+            this.radioButton3.TabIndex = 11;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Completed Sales";
+            this.radioButton3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 283);
+            this.ClientSize = new System.Drawing.Size(310, 170);
+            this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -175,13 +182,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.RadioButton radioButton3;
     }
 }
 

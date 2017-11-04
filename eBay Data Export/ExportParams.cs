@@ -10,5 +10,6 @@ namespace eBay_Data_Export
     {
         public static int numberOfDays;
         public static string authToken;
+        public static string apiCall;
     }
 }

@@ -92,6 +92,7 @@ namespace eBay_Data_Export
                 loggedIn = true;
                 button1.Enabled = false;
                 button2.Enabled = true;
+                button3.Enabled = true;
             }
             catch
             {
@@ -100,6 +101,7 @@ namespace eBay_Data_Export
                 loggedIn = false;
                 button1.Enabled = true;
                 button2.Enabled = false;
+                button3.Enabled = false;
             }
 
             return nodes[0].InnerText;
@@ -131,25 +133,28 @@ namespace eBay_Data_Export
 
         private void OptionChanged(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Clear();
-            if (radioButton1.Checked)
-            {
-                foreach (string s in soldItems)
-                {
-                    checkedListBox1.Items.Add(s);
-                }
-            }
-            else
-            {
-                foreach (string s in purchasedItems)
-                {
-                    checkedListBox1.Items.Add(s);
-                }
-            }
+            
         }
 
         private void Export(object sender, EventArgs e)
         {
+            if (radioButton1.Checked)
+            {
+                ExportParams.apiCall = "soldItems";
+            }
+            else if (radioButton2.Checked)
+            {
+                ExportParams.apiCall = "purchasedItems";
+            }
+            else
+            {
+                ExportParams.apiCall = "completedSales";
+                if (numericUpDown2.Value > 0)
+                {
+                    MessageBox.Show("Note: This call retrieves a massive amount of data. Any date range higher than one day is not recommended.");
+                }
+            }
+
             ExportParams.numberOfDays = (int)numericUpDown2.Value;
             ExportParams.authToken = authToken;
             new ExportInfo().ShowDialog();

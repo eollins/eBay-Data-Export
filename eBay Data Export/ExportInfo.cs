@@ -23,10 +23,33 @@ namespace eBay_Data_Export
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (ExportParams.apiCall == "soldItems")
+            {
+                soldItems();
+            }
+            else if (ExportParams.apiCall == "purchasedItems")
+            {
+
+            }
+            else if (ExportParams.apiCall == "completedListings")
+            {
+
+            }
+
+            
+        }
+
+        public void soldItems()
+        {
             string info = "Item Name,Date Sold,Price,Buyer,Time Sold\n";
             DateTime start = DateTime.Now;
             for (int i = 1; i < pageNumber; i++)
             {
+                if (i == 1)
+                {
+                    progressBar1.Value = progressBar1.Maximum;
+                }
+
                 progressBar2.Maximum = pageNumber;
                 progressBar2.Value++;
                 label2.Text = "Downloading Page " + i + "/" + pageNumber;
@@ -47,7 +70,11 @@ namespace eBay_Data_Export
                 XmlDocument doc = new XmlDocument();
                 doc.LoadXml(response.Content);
                 XmlNodeList nodes = ((XmlElement)doc.GetElementsByTagName("TransactionArray")[0]).GetElementsByTagName("Transaction");
-                pageNumber = int.Parse(((XmlElement)doc.GetElementsByTagName("PaginationResult")[0]).GetElementsByTagName("TotalNumberOfPages")[0].InnerText);
+
+                if (i == 1)
+                {
+                    pageNumber = int.Parse(((XmlElement)doc.GetElementsByTagName("PaginationResult")[0]).GetElementsByTagName("TotalNumberOfPages")[0].InnerText);
+                }
 
                 foreach (XmlElement ele in nodes)
                 {
@@ -60,7 +87,7 @@ namespace eBay_Data_Export
 
                     string finalDate = date[1] + "/" + date[2] + "/" + date[0];
 
-                    DateTime dt = new DateTime(int.Parse(date[0]), int.Parse(date[1]), int.Parse(date[2]));
+                    DateTime dt = new DateTime(int.Parse(date[0]), int.Parse(date[1]), int.Parse(date[2]), int.Parse(time[0]), int.Parse(time[1]), int.Parse(time[2]));
                     int subtraction = Convert.ToInt32(-1 * ExportParams.numberOfDays);
                     DateTime minimumDay = DateTime.Now.AddDays(subtraction);
                     if (DateTime.Compare(dt, minimumDay) < 0)
@@ -91,11 +118,6 @@ namespace eBay_Data_Export
 
                     string finalTime = time[0] + ":" + time[1] + ":" + time[2];
                     info += "," + finalTime + "\n";
-
-                    if (i == 1)
-                    {
-                        progressBar1.Value = progressBar1.Maximum;
-                    }
                 }
             }
 
@@ -106,6 +128,7 @@ namespace eBay_Data_Export
 
             MessageBox.Show("Download completed in " + span.Seconds + " seconds");
             progressBar3.Value = 100;
+            progressBar3.Maximum = 100;
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 StreamWriter writer = new StreamWriter(saveFileDialog1.FileName);
