@@ -29,14 +29,8 @@ namespace eBay_Data_Export
             }
             else if (ExportParams.apiCall == "purchasedItems")
             {
-
+                purchasedItems();
             }
-            else if (ExportParams.apiCall == "completedListings")
-            {
-
-            }
-
-            
         }
 
         public void soldItems()
@@ -129,6 +123,78 @@ namespace eBay_Data_Export
             MessageBox.Show("Download completed in " + span.Seconds + " seconds");
             progressBar3.Value = 100;
             progressBar3.Maximum = 100;
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter writer = new StreamWriter(saveFileDialog1.FileName);
+                writer.Write(info);
+                writer.Close();
+                MessageBox.Show("File saved successfully");
+            }
+        }
+
+        public void purchasedItems()
+        {
+            progressBar1.Value = 0;
+            progressBar1.Maximum = 1;
+            progressBar2.Value = 0;
+            progressBar2.Maximum = pageNumber;
+            progressBar3.Value = 0;
+            progressBar3.Maximum = 1;
+
+            DateTime start = DateTime.Now;
+            string info = "Item Title,Price Paid,Date,Seller ID,Item Number\n";
+
+            for (int i = 1; i < pageNumber; i++)
+            {
+                var client = new RestClient("https://api.ebay.com/ws/api.dll");
+                var request = new RestRequest(Method.POST);
+                request.AddHeader("postman-token", "aeb30e56-895e-6a02-44af-ba7fd4cae51b");
+                request.AddHeader("cache-control", "no-cache");
+                request.AddHeader("x-ebay-api-siteid", "0");
+                request.AddHeader("x-ebay-api-call-name", "GetOrders");
+                request.AddHeader("x-ebay-api-compatibility-level", "967");
+                request.AddHeader("content-type", "text/xml");
+                request.AddHeader("x-ebay-api-cert-name", "PRD-45ed603527c9-2461-4859-9906-7f37");
+                request.AddHeader("x-ebay-api-dev-name", "8105fd0e-a76c-4e10-80e8-43e86ab59f7c");
+                request.AddHeader("x-ebay-api-app-name", "GregoryM-mailer-PRD-a45ed6035-97c14545");
+                request.AddParameter("text/xml", "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<GetOrdersRequest xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n  <RequesterCredentials>\n    <eBayAuthToken>" + ExportParams.authToken + "</eBayAuthToken>\n  </RequesterCredentials>\n  <OrderRole>Buyer</OrderRole>\n  <OrderStatus>All</OrderStatus>\n  <NumberOfDays>" + ExportParams.numberOfDays + "</NumberOfDays>\n</GetOrdersRequest>", ParameterType.RequestBody);
+                IRestResponse response = client.Execute(request);
+
+                XmlDocument doc = new XmlDocument();
+                doc.LoadXml(response.Content);
+                XmlNodeList nodes = ((XmlElement)doc.GetElementsByTagName("GetOrdersResponse")[0]).GetElementsByTagName("PaginationResult");
+                pageNumber = int.Parse(nodes[0].InnerText);
+                progressBar2.Maximum = pageNumber;
+
+                progressBar2.Value += 1;
+
+                XmlNodeList nodes2 = ((XmlElement)doc.GetElementsByTagName("GetOrdersResponse")[0]).GetElementsByTagName("OrderArray");
+                foreach (XmlElement ele in nodes2)
+                {
+                    info += ((XmlElement)((XmlElement)ele.GetElementsByTagName("TransactionArray")[0]).GetElementsByTagName("Item")[0]).GetElementsByTagName("Title")[0].InnerText;
+                    info += "," + ele.GetElementsByTagName("Total")[0].InnerText;
+
+                    string first = ele.GetElementsByTagName("PaidTime")[0].InnerText;
+                    string[] components = first.Split('T');
+                    string[] date = components[0].Split('-');
+                    string[] time = components[1].Split(':');
+                    time[2] = time[2].Substring(0, time[2].IndexOf('.'));
+
+                    string finalDate = date[1] + "/" + date[2] + "/" + date[0];
+
+                    info += "," + finalDate;
+                    info += "," + ele.GetElementsByTagName("SellerUserID")[0].InnerText;
+                    info += "," + ((XmlElement)((XmlElement)ele.GetElementsByTagName("TransactionArray")[0]).GetElementsByTagName("Item")[0]).GetElementsByTagName("ItemID")[0].InnerText + "\n";
+                }
+            }
+
+            DateTime end = DateTime.Now;
+
+            TimeSpan span = end - start;
+
+            MessageBox.Show("Download completed in " + span.Seconds + " seconds");
+            progressBar3.Maximum = 100;
+            progressBar3.Value = 100;
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 StreamWriter writer = new StreamWriter(saveFileDialog1.FileName);

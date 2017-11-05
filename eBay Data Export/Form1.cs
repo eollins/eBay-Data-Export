@@ -146,14 +146,6 @@ namespace eBay_Data_Export
             {
                 ExportParams.apiCall = "purchasedItems";
             }
-            else
-            {
-                ExportParams.apiCall = "completedSales";
-                if (numericUpDown2.Value > 0)
-                {
-                    MessageBox.Show("Note: This call retrieves a massive amount of data. Any date range higher than one day is not recommended.");
-                }
-            }
 
             ExportParams.numberOfDays = (int)numericUpDown2.Value;
             ExportParams.authToken = authToken;
