@@ -26,10 +26,12 @@ namespace eBay_Data_Export
             if (ExportParams.apiCall == "soldItems")
             {
                 soldItems();
+                Application.Exit();
             }
             else if (ExportParams.apiCall == "purchasedItems")
             {
                 purchasedItems();
+                Application.Exit();
             }
         }
 
@@ -120,7 +122,7 @@ namespace eBay_Data_Export
 
             TimeSpan span = end - start;
 
-            MessageBox.Show("Download completed in " + span.Seconds + " seconds");
+             MessageBox.Show("Download completed in " + span.Seconds + " seconds");
             progressBar3.Value = 100;
             progressBar3.Maximum = 100;
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
@@ -168,13 +170,10 @@ namespace eBay_Data_Export
 
                 progressBar2.Value += 1;
 
-                XmlNodeList nodes2 = ((XmlElement)doc.GetElementsByTagName("GetOrdersResponse")[0]).GetElementsByTagName("OrderArray");
+                XmlNodeList nodes2 = ((XmlElement)((XmlElement)doc.GetElementsByTagName("GetOrdersResponse")[0]).GetElementsByTagName("OrderArray")[0]).GetElementsByTagName("Order");
                 foreach (XmlElement ele in nodes2)
                 {
-                    info += ((XmlElement)((XmlElement)ele.GetElementsByTagName("TransactionArray")[0]).GetElementsByTagName("Item")[0]).GetElementsByTagName("Title")[0].InnerText;
-                    info += "," + ele.GetElementsByTagName("Total")[0].InnerText;
-
-                    string first = ele.GetElementsByTagName("PaidTime")[0].InnerText;
+                    string first = ele.GetElementsByTagName("CreatedDate")[0].InnerText;
                     string[] components = first.Split('T');
                     string[] date = components[0].Split('-');
                     string[] time = components[1].Split(':');
@@ -182,6 +181,25 @@ namespace eBay_Data_Export
 
                     string finalDate = date[1] + "/" + date[2] + "/" + date[0];
 
+                    DateTime dt = new DateTime(int.Parse(date[0]), int.Parse(date[1]), int.Parse(date[2]), int.Parse(time[0]), int.Parse(time[1]), int.Parse(time[2]));
+                    int subtraction = Convert.ToInt32(-1 * ExportParams.numberOfDays);
+                    DateTime minimumDay = DateTime.Now.AddDays(subtraction);
+                    if (DateTime.Compare(dt, minimumDay) < 0)
+                        continue;
+
+                    string name = ele.GetElementsByTagName("Item")[0].InnerText;
+
+                    if (name.Contains(',')) {
+                        while (name.Contains(','))
+                        {
+                            StringBuilder sb = new StringBuilder(name);
+                            sb[name.IndexOf(',')] = ' ';
+                            name = sb.ToString();
+                        }
+                    }
+
+                    info += name;
+                    info += "," + ele.GetElementsByTagName("Total")[0].InnerText;
                     info += "," + finalDate;
                     info += "," + ele.GetElementsByTagName("SellerUserID")[0].InnerText;
                     info += "," + ((XmlElement)((XmlElement)ele.GetElementsByTagName("TransactionArray")[0]).GetElementsByTagName("Item")[0]).GetElementsByTagName("ItemID")[0].InnerText + "\n";
