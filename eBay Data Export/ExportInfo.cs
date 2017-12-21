@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -31,7 +32,6 @@ namespace eBay_Data_Export
             else if (ExportParams.apiCall == "purchasedItems")
             {
                 purchasedItems();
-                Application.Exit();
             }
         }
 
@@ -122,7 +122,7 @@ namespace eBay_Data_Export
 
             TimeSpan span = end - start;
 
-             MessageBox.Show("Download completed in " + span.Seconds + " seconds");
+            MessageBox.Show("Download completed in " + span.Seconds + " seconds");
             progressBar3.Value = 100;
             progressBar3.Maximum = 100;
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
@@ -134,7 +134,7 @@ namespace eBay_Data_Export
             }
         }
 
-        public void purchasedItems()
+        public async void purchasedItems()
         {
             progressBar1.Value = 0;
             progressBar1.Maximum = 1;
@@ -144,26 +144,31 @@ namespace eBay_Data_Export
             progressBar3.Maximum = 1;
 
             DateTime start = DateTime.Now;
-            string info = "Item Title,Price Paid,Date,Seller ID,Item Number\n";
+            string info = "Item Title,Price Paid,Date,Seller ID,Item Number,Paid,Date Paid,Shipped,Shipping Price,Shipping Carrier,Tracking Number,Shipping Status\n";
 
             for (int i = 1; i < pageNumber; i++)
             {
-                var client = new RestClient("https://api.ebay.com/ws/api.dll");
-                var request = new RestRequest(Method.POST);
-                request.AddHeader("postman-token", "aeb30e56-895e-6a02-44af-ba7fd4cae51b");
-                request.AddHeader("cache-control", "no-cache");
-                request.AddHeader("x-ebay-api-siteid", "0");
-                request.AddHeader("x-ebay-api-call-name", "GetOrders");
-                request.AddHeader("x-ebay-api-compatibility-level", "967");
-                request.AddHeader("content-type", "text/xml");
-                request.AddHeader("x-ebay-api-cert-name", "PRD-45ed603527c9-2461-4859-9906-7f37");
-                request.AddHeader("x-ebay-api-dev-name", "8105fd0e-a76c-4e10-80e8-43e86ab59f7c");
-                request.AddHeader("x-ebay-api-app-name", "GregoryM-mailer-PRD-a45ed6035-97c14545");
-                request.AddParameter("text/xml", "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<GetOrdersRequest xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n  <RequesterCredentials>\n    <eBayAuthToken>" + ExportParams.authToken + "</eBayAuthToken>\n  </RequesterCredentials>\n  <OrderRole>Buyer</OrderRole>\n  <OrderStatus>All</OrderStatus>\n  <NumberOfDays>" + ExportParams.numberOfDays + "</NumberOfDays>\n</GetOrdersRequest>", ParameterType.RequestBody);
-                IRestResponse response = client.Execute(request);
+                WebRequest request = WebRequest.Create("https://api.ebay.com/ws/api.dll");
+                request.Method = "POST";
+                request.ContentType = "text/xml";
+                request.Headers.Add("x-ebay-api-siteid", "0");
+                request.Headers.Add("x-ebay-api-call-name", "GetOrders");
+                request.Headers.Add("x-ebay-api-compatibility-level", "967");
+                request.Headers.Add("x-ebay-api-cert-name", "PRD-45ed603527c9-2461-4859-9906-7f37");
+                request.Headers.Add("x-ebay-api-dev-name", "8105fd0e-a76c-4e10-80e8-43e86ab59f7c");
+                request.Headers.Add("x-ebay-api-app-name", "GregoryM-mailer-PRD-a45ed6035-97c14545");
+
+                XmlDocument docu = new XmlDocument();
+                docu.LoadXml("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<GetOrdersRequest xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n  <RequesterCredentials>\n    <eBayAuthToken>" + ExportParams.authToken + "</eBayAuthToken>\n  </RequesterCredentials>\n  <OrderRole>Buyer</OrderRole>\n  <OrderStatus>All</OrderStatus>\n  <Pagination>\n  <EntriesPerPage>100</EntriesPerPage>\n  <PageNumber>" + i + "</PageNumber>\n  </Pagination>\n  <NumberOfDays>" + ExportParams.numberOfDays + "</NumberOfDays>\n</GetOrdersRequest>");
+
+                request.ContentLength = docu.InnerXml.Length;
+                byte[] data = new ASCIIEncoding().GetBytes(docu.InnerXml);
+                request.GetRequestStream().Write(data, 0, docu.InnerXml.Length);
+                 
+                WebResponse response = await request.GetResponseAsync();
 
                 XmlDocument doc = new XmlDocument();
-                doc.LoadXml(response.Content);
+                doc.LoadXml(new StreamReader(response.GetResponseStream()).ReadToEnd());
                 XmlNodeList nodes = ((XmlElement)doc.GetElementsByTagName("GetOrdersResponse")[0]).GetElementsByTagName("PaginationResult");
                 pageNumber = int.Parse(nodes[0].InnerText);
                 progressBar2.Maximum = pageNumber;
@@ -198,11 +203,115 @@ namespace eBay_Data_Export
                         }
                     }
 
+                    string itemNumber = ((XmlElement)((XmlElement)ele.GetElementsByTagName("TransactionArray")[0]).GetElementsByTagName("Item")[0]).GetElementsByTagName("ItemID")[0].InnerText;
+                    StringBuilder sb2 = new StringBuilder(name);
+                    sb2.Replace(itemNumber, "");
+                    try
+                    {
+                        string textToErase = name.Substring(name.IndexOf("2750"));
+                        sb2.Replace(textToErase, "");
+                    }
+                    catch { }
+                    try
+                    {
+                        string textToErase2 = name.Substring(name.IndexOf("5000"));
+                        sb2.Replace(textToErase2, "");
+                    }
+                    catch { }
+                    try
+                    {
+                        string textToErase3 = name.Substring(name.IndexOf("4000"));
+                        sb2.Replace(textToErase3, "");
+                    }
+                    catch { }
+                    try
+                    {
+                        string textToErase4 = name.Substring(name.IndexOf("82750"));
+                        sb2.Replace(textToErase4, "");
+                    }
+                    catch { }
+                    name = sb2.ToString();
+
+                    string paid = ((XmlElement)doc.GetElementsByTagName("CheckoutStatus")[0]).GetElementsByTagName("Status")[0].InnerText;
+                    if (paid == "Incomplete")
+                    {
+                        paid = "No";
+                    }
+                    else if (paid == "Complete")
+                    {
+                        paid = "Yes";
+                    }
+
+                    string shipped;
+                    string shippingPrice;
+                    string shippingService;
+                    string trackingNumber;
+                    try
+                    {
+                        shippingPrice = ((XmlElement)doc.GetElementsByTagName("ShippingServiceSelected")[0]).GetElementsByTagName("ShippingServiceCost")[0].InnerText;
+
+                        try
+                        {
+                            shippingService = ((XmlElement)doc.GetElementsByTagName("ShippingServiceSelected")[0]).GetElementsByTagName("ShippingService")[0].InnerText;
+                        }
+                        catch
+                        {
+                            shippingService = ((XmlElement)doc.GetElementsByTagName("ShippingServiceSelected")[0]).GetElementsByTagName("ShippingCarrierUsed")[0].InnerText;
+                        }
+
+                        try
+                        {
+                            trackingNumber = ((XmlElement)((XmlElement)ele.GetElementsByTagName("ShippingDetails")[0]).GetElementsByTagName("ShipmentTrackingDetails")[0]).GetElementsByTagName("ShipmentTrackingNumber")[0].InnerText;
+                        }
+                        catch
+                        {
+                            trackingNumber = "Unavailable";
+                        }
+
+                        try
+                        {
+                            string shippedTime = ele.GetElementsByTagName("ShippedTime")[0].InnerText;
+                            shipped = "Yes";
+                        }
+                        catch
+                        {
+                            shipped = "No";
+                        }
+                    }
+                    catch
+                    {
+                        shippingPrice = "N/A";
+                        shippingService = "N/A";
+                        trackingNumber = "N/A";
+                        shipped = "No";
+                    }
+                    string datePaid;
+                    string finalDate2;
+                    try
+                    {
+                        datePaid = ele.GetElementsByTagName("PaidTime")[0].InnerText;
+                        string[] components2 = datePaid.Split('T');
+                        string[] date2 = components2[0].Split('-');
+                        string[] time2 = components2[1].Split(':');
+                        time2[2] = time2[2].Substring(0, time2[2].IndexOf('.'));
+                        finalDate2 = date2[1] + "/" + date2[2] + "/" + date2[0];
+                    }
+                    catch
+                    {
+                        finalDate2 = "Unavailable";
+                    }
+
                     info += name;
-                    info += "," + ele.GetElementsByTagName("Total")[0].InnerText;
+                    info += "," + ele.GetElementsByTagName("Subtotal")[0].InnerText;
                     info += "," + finalDate;
                     info += "," + ele.GetElementsByTagName("SellerUserID")[0].InnerText;
-                    info += "," + ((XmlElement)((XmlElement)ele.GetElementsByTagName("TransactionArray")[0]).GetElementsByTagName("Item")[0]).GetElementsByTagName("ItemID")[0].InnerText + "\n";
+                    info += "," + itemNumber;
+                    info += "," + paid;
+                    info += "," + finalDate2;
+                    info += "," + shipped;
+                    info += "," + shippingPrice;
+                    info += "," + shippingService;
+                    info += "," + trackingNumber + "\n";
                 }
             }
 
